@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@400&display=swap');
+
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #003057;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    width: 100vw;
+}
+
+.centered {
+    margin: 20px 0px 20px 0px;
+    width: 100%;
+    max-width: 1024px;
+    height: 100%;
+}
+.ham {
+    display: none;
+}
+
+.nav {
+    max-height: 80px;
+    width: 100%;
+    height: 10%;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navi {
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.25);
+    width: 728px;
+    height: 60px;
+
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.n {
+    height: 100%;
+    width: 408.87px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.actual {
+    width: 409px;
+    height: 26px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 26px;
+}
+.me {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500; 
+    color: #181818;
+}
+.connect {
+    height: 100%;
+    width: 138px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.c {
+    width: 138px;
+    height: 40px;
+    background-color: #060F8F;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+.o {
+    width: 17.7px;
+    height: 13.2px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.word {
+    width: 52.5px;
+    height: 17px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff
+}
+.mode {
+    height: 100%;
+    width: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 100%;
+    height: 90%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.xr {
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 30px;
+    font-weight: 400; 
+
+    color: #fff;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-height: 118px;
+    height: 10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text {
+    width: 100%;
+    max-width: 750px;
+    height: 56px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.t {
+    height: 100%;
+    width: fit-content;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.e {
+    height: 100%;
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #2B2930;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    height: 100%;
+    max-height: 56px;
+    background-color: #2B2930;
+    min-width: 275px;
+    border-radius: 28px;
+}
+.i {
+    height: 100%;
+    width: 80%;
+
+
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.send {
+    height: 100%;
+    width: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Styles for mobile screens */
+@media (max-width: 402px) {
+    
+}
+
+/* Styles for tablet screens */
+@media (max-width: 834px) {
+    .n, .mode {
+        display: none;
+    }
+    .connect {
+        margin-right: 20px;
+    }
+    .ham {
+        margin-left: 20px;
+    }
+    .navi {
+        justify-content: space-between;
+    }
+    .ham {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 48px;
+        height: 48px;
+    }
+    .nav {
+        padding: 0px 5px 0px 5px;
+    }
+}
