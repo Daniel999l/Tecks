@@ -31,6 +31,7 @@ body {
 }
 
 .nav {
+    cursor: default;
     max-height: 80px;
     width: 100%;
     height: 10%;
@@ -75,25 +76,50 @@ body {
     width: 40px;
     height: 26px;
 }
+a {
+    all: unset;
+}
 .me {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 500; 
     color: #181818;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.1s;
+}
+.me:hover {
+    color:  #1a1a1a; /* Slightly darker shade */
+}
+
+/* Shrink size on click */
+.me:active {
+    transform: scale(0.9); /* Reduce size by 10% */
 }
 .connect {
     height: 100%;
     width: 138px;
-
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
+
+/* Darken color on hover */
+.c:hover {
+    background-color: #050D7A; /* Slightly darker shade */
+}
+
+/* Shrink size on click */
+.c:active {
+    transform: scale(0.9); /* Reduce size by 10% */
+}
+
 .c {
+    transition: background-color 0.3s, transform 0.1s;
     width: 138px;
     height: 40px;
-    background-color: #060F8F;
     border-radius: 20px;
+    background-color: #060F8F; /* Default color */
 
     display: flex;
     justify-content: center;
@@ -145,6 +171,7 @@ body {
     font-weight: 400; 
 
     color: #fff;
+    cursor: default;
 }
 .footer {
     position: fixed;
@@ -189,11 +216,23 @@ body {
     height: 48px;
     border-radius: 50%;
     background-color: #2B2930;
-
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.3s, transform 0.1s;
+    cursor: pointer;
 }
+
+/* Darken background color on hover */
+.circle:hover {
+    background-color: #211F25; /* Slightly darker shade */
+}
+
+/* Shrink size on click */
+.circle:active {
+    transform: scale(0.9); /* Reduce size by 10% */
+}
+
 
 .input {
     display: flex;
@@ -220,11 +259,18 @@ body {
 .send {
     height: 100%;
     width: 20%;
-
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 0.1s;
+    cursor: pointer;
 }
+
+/* Shrink size on click */
+.send:active {
+    transform: scale(0.9); /* Reduce size by 10% */
+}
+
 
 
 /* Styles for mobile screens */
